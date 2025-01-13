@@ -1,0 +1,109 @@
+/* card section */
+.cards-container {
+    padding: 6vh 8vh;
+}
+
+.card-heading h2{
+    text-align: center;
+}
+
+.card-item {
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.card {
+    width: 255px;
+    height: 375px;
+    padding: 2vh;
+}
+
+.item-img img {
+    border-radius: 20px;
+    width: 255px;
+    height: 258px;
+    background-color: #F0F0F0;
+}
+.item-text{
+    width: 255px;
+}
+.pricing {
+    display: flex;
+    gap: 15px;
+}
+
+.pricing p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+/* 
+rating 
+*/
+
+.rating {
+    font-size: 1.5rem;
+    /* icon size */
+    display: grid;
+    grid-template: "full" 1fr/1fr;
+    color: #ffc633;
+  }
+  .rating::before {
+    grid-area: full;
+    width: calc((var(--rating, 0) / 5) * 100%);
+    overflow: hidden;
+    white-space: nowrap;
+    content: "★★★★★";
+  }
+  .rating::after {
+    grid-area: full;
+    white-space: nowrap;
+    content: "☆☆☆☆☆";
+  }
+
+.pricing p~p{
+    color: #a7a5a5;
+}
+
+.item-text {
+    padding: 2vh;
+    font-size: 15px;
+}
+
+
+.discount-rate p {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+.discount-rate {
+    gap: 10px;
+}
+
+
+
+.discount-rate :nth-child(3) {
+    color: red;
+    font-size: 14px;
+    background-color: #FF33331A;
+    border-radius: 15px;
+    width: 60px;
+    text-align: center;
+}
+
+.view-all-btn button {
+    width: 160px;
+    height: 45px;
+    margin-top: 30px;
+    padding: 16px 54px 16px 54px;
+    gap: 12px;
+    border-radius: 62px;
+    border: 1px;
+
+}

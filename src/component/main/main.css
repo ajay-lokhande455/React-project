@@ -1,0 +1,84 @@
+.hero-section {
+    padding: 20vh 8vh 0vh 8vh;
+    justify-content: space-between;
+    margin-bottom: -4px;
+}
+
+
+
+.hero-heading h1 {
+    font-weight: 1000;
+    font-size: 69px;
+    line-height: 58px;
+    padding-top: 2vh;
+}
+
+.hero-heading p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 20px;
+    padding-right: 204px;
+    color: #00000099;
+
+}
+
+.hero-heading button {
+    background: #000000;
+    color: #FFFFFF;
+    margin-top: 20px;
+    padding: 16px 54px 16px 54px;
+    border-radius: 62px;
+    font-size: 18px;
+    border: none;
+}
+
+.hero-img img {
+    width: 430px;
+}
+
+.hero-img {
+    position: relative;
+}
+
+.star-1 {
+    width: 80px;
+    position: absolute;
+    right: 5px;
+    top: 80px;
+}
+
+.star-2 {
+    position: absolute;
+    right: 420px;
+    top: 240px;
+}
+
+.stocks {
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.stock-details p {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0;
+    color: var(--main-text-color);
+
+}
+
+.vl {
+    height: 48px;
+    width: 2px;
+    background-color: #a7a5a5;
+    opacity: 0.3;
+}
+
+.brand-logos {
+    height: 122px;
+    background-color: #000000;
+    justify-content: center;
+    gap: 80px;
+    padding: 4% 8vh;
+}
+
