@@ -44,25 +44,8 @@
 rating 
 */
 
-.rating {
-    font-size: 1.5rem;
-    /* icon size */
-    display: grid;
-    grid-template: "full" 1fr/1fr;
-    color: #ffc633;
-  }
-  .rating::before {
-    grid-area: full;
-    width: calc((var(--rating, 0) / 5) * 100%);
-    overflow: hidden;
-    white-space: nowrap;
-    content: "★★★★★";
-  }
-  .rating::after {
-    grid-area: full;
-    white-space: nowrap;
-    content: "☆☆☆☆☆";
-  }
+
+  
 
 .pricing p~p{
     color: #a7a5a5;

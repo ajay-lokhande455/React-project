@@ -65,3 +65,30 @@ body {
 .email-input button:hover {
     background-color: #333;
 }
+
+.rating {
+  font-size: 1.5rem;
+  display: inline-grid;
+  grid-template-areas: "full";
+  position: relative;
+  color: #ffc633;
+}
+
+.rating::before {
+  content: "★★★★★";
+  grid-area: full;
+  overflow: hidden;
+  white-space: nowrap;
+  width: calc((var(--rating, 0) / 5) * 100%);
+  color: #ffc633;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rating::after {
+  content: "☆☆☆☆☆";
+  grid-area: full;
+  white-space: nowrap;
+  color: #d3d3d3;
+}

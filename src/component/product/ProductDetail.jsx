@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./ProductDetail.css"
+import "./productDetail.css"
 
 
 const ProductDetail = () => {
@@ -42,10 +42,10 @@ const ProductDetail = () => {
 
             {/* Rating */}
             <div
-              className="rating"
-              style={{ "--rating": product.rating }}
-              aria-label={`Rating: ${product.rating} out of 5`}
-            ></div>
+                  className="rating"
+                  style={{ "--rating": product.rating }}
+                  aria-label={`Rating: ${product.rating}`}
+                ></div>
 
             {/* Pricing */}
             <div className="pricing">

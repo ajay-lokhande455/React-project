@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NewArrival = () => {
   const [products, setProducts] = useState([]);
-  const [showAll, setShowAll] = useState(false); 
+  const [showAll, setShowAll] = useState(false);
 
   async function getProducts() {
     const response = await fetch("https://dummyjson.com/products");
@@ -23,7 +23,7 @@ const NewArrival = () => {
       </div>
       <div className="card-item flex center wrap">
         {products
-          .slice(0, showAll ? products.length : 4) 
+          .slice(0, showAll ? products.length : 4)
           .map((product, index) => (
             <div className="card" key={index}>
               {/* Product Image */}
@@ -41,7 +41,7 @@ const NewArrival = () => {
                 <div
                   className="rating"
                   style={{ "--rating": product.rating }}
-                  aria-label={`Rating: ${product.rating} out of 5`}
+                  aria-label={`Rating: ${product.rating}`}
                 ></div>
 
                 {/* Pricing */}
@@ -56,9 +56,9 @@ const NewArrival = () => {
       <div className="view-all-btn flex center">
         <button
           className="toggle-btn"
-          onClick={() => setShowAll((prev) => !prev)} 
+          onClick={() => setShowAll((prev) => !prev)}
         >
-          {showAll ? "Hide All" : "View All"} 
+          {showAll ? "Hide All" : "View All"}
         </button>
       </div>
     </section>
