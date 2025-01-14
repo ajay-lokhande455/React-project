@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./productDetail.css"
+import "./ProductDetail.css"
 
 
 const ProductDetail = () => {
@@ -74,11 +74,6 @@ const ProductDetail = () => {
               <button onClick={() => handleAddToCart(product.id)}>Add to Cart</button>
             </div>
           </div>
-        </section>
-
-        {/* Rating Section */}
-        <section className="rating-container">
-          {/* Add any additional rating or review functionality here */}
         </section>
       </section>
     )

@@ -1,5 +1,6 @@
 import Main from "../component/main/Main"
 import NewArrival from "../component/newArrivals/NewArrival"
+import StyleContainer from "../component/stylesContainer/StyleContainer"
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
        <Main />
        <NewArrival />
+       <StyleContainer/>
     </div>
   )
 }
