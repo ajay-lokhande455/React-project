@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import ProductPage from "./pages/ProductPage";
 import Footer from "./component/footer/Footer";
 import { useState, useEffect } from "react";
-import CartPage from "./pages/cartPage";
+import CartPage from "./pages/CartPage";
 
 function App() {
   const initialState = JSON.parse(localStorage.getItem("cartItem")) || [];
