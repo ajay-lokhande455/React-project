@@ -63,13 +63,16 @@ const Header = ({ cartItems }) => {
           {products.length > 0 && (
             <div className="search-results">
               {products.map((product) => (
+                 <Link key={product.id} to={`productPage/${product.id}`} className="product-item">
                 <div key={product.id} className="product-item">
                   <img src={product.thumbnail} alt={product.title} />
                   <div>
                     <h4>{product.title}</h4>
                     <p>Price: ${product.price}</p>
                   </div>
+                 
                 </div>
+                </Link>
               ))}
             </div>
           )}

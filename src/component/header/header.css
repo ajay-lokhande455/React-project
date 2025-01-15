@@ -138,3 +138,7 @@ header {
   
  
   
+  .product-item h4,
+.product-item p {
+    color: black; /* Change text color to black */
+}
