@@ -8,6 +8,8 @@ import { useState, useEffect } from "react";
 import CartPage from "./pages/CartPage";
 
 function App() {
+  document.title = "e-commerce-web-app";
+
   const initialState = JSON.parse(localStorage.getItem("cartItem")) || [];
   const [cartItems, setCartItems] = useState(initialState);
 
