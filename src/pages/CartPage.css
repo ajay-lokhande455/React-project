@@ -166,33 +166,143 @@
   .remove-product-btn:hover {
     background-color: #333;
   }
+
   
-  .quantity-control {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.quantity-btn {
-  padding: 8px 12px;
-  background: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.quantity-btn:hover {
-  background: #333;
-}
-
-.product-details span {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 0 10px;
-}
-
+ /* Place Order Button */
+.place-order-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .place-order-btn:hover {
+    background: #218838;
+  }
+  
+  /* Order Form Modal */
+  .order-form-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .order-form-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-form-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .order-form-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order-form-content label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .order-form-content input,
+  .order-form-content select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-order-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .submit-order-btn:hover {
+    background-color: #218838;
+  }
+  
+  .close-modal-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .close-modal-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Success Message Popup */
+  .success-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .success-popup .success-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .success-popup h3 {
+    font-size: 24px;
+    color: green;
+  }
+  
+  .success-popup button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .success-popup button:hover {
+    background-color: #218838;
+  }
   
